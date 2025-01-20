@@ -1,0 +1,104 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+.top{
+    display: flex;
+    background-color: rgb(249, 48, 48);
+    padding : 2px;
+}
+.icon>img{
+    width : 25px;
+    height : 25px;
+    filter :invert();
+    /* padding: 5px; */
+}
+.text{
+    margin-left: 35%;
+    display: flex;
+    margin-top: 10px;
+}
+span{
+    color : white;
+    font-size: 17px;
+}
+div.right>img{
+    width : 22px;
+    height : 20px;
+}
+.header{
+    background-color: black;
+    display: flex;
+}
+.header>img{
+    width : 85px;
+    height: 68px;
+    filter : invert()
+}
+ul>li{
+    padding-right: 40px;
+    list-style: none;
+    font-size: 18px;
+    color: white;
+}
+ul{
+    display: flex;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+header>div>img{
+    width : 35px;
+    height: 35px;
+    padding-top: 15px;
+    filter: invert();
+    margin-right: 40px;
+}
+header>button{
+    background-color: red;
+    color: white;
+    width : 140px;
+    height: 50px;
+    margin-top:10px ;
+    border-radius: 40px;
+}
+#medium{
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+#medium .div{
+    width: 40%;
+    margin-left: 120px;
+    padding-top: 10%;
+}
+#medium>div>h1{
+    color : white;
+    font-size: 65px;
+}
+#medium>div>h4{
+    color : yellow;
+    font-size: 27px;
+    padding-top: 20px;
+}
+#medium .div>button{
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    border-radius: 40px;
+    height: 50px;
+    width: 30%;
+    font-size: medium;
+}
+#medium .div>span{
+    font-size: 30px;
+}
+
+
+
+/* #section-2{
+background-color: blueviolet;
+} */

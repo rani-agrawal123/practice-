@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #header{
+        display:flex ;
+        background-color: #ef1695;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+       }
+       img{
+        height: 30px;
+       }
+       #heading{
+        background-color: white;
+        height: 100px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+
+       }
+       #heading > img{
+        width: 30%;
+        height: 100%;
+        padding-left: 20px;
+       }
+       #heading>p{
+        display: inline-block;
+        text-align: end;
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(61, 61, 222);
+        text-align: center;
+        
+       }
+       #heading> button{
+        border-radius: 20px;
+        color: white;
+        background-color: skyblue;
+        border: none;
+        padding: 10px;
+        flex-direction: column;
+       }
+       #bodyimg{
+        width: 60%;
+        height: auto;
+        
+       }
+       #h2text{
+        color: rgb(49, 49, 177);
+        text-align: center;
+        font-family:sans-serif;
+        font-size: 80px;
+       }
+       #h3text{
+        color: #ef1695;
+        text-align: center;
+        font-family:sans-serif;
+        font-size: 80px;
+       }
+       #ptext{
+        text-align: center;
+        font-family:sans-serif;
+        font-size: x-large;
+        padding-left: 30px;
+        padding-right: 30px;
+       }
+       #balls {
+        display: grid;
+        justify-items: center;
+        
+       }
+       #balls > div> div>p{
+        color: rgb(55, 55, 163);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+       #balls{
+        display: flex;
+        flex-direction: row;
+       }
+       .section-tittle{
+        background-color: rgb(231, 227, 227);
+       }
+       .section-tittle h2 {
+        font-family: "Fredoka One", cursive;
+        color: #423F8D;
+        text-align: center;
+        }
+        .section-tittle p{
+        font-family: "Fredoka One", cursive;
+        color: #423F8D;
+        text-align: center;
+        }
+        .gridd{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            
+            
+            
+        }
+        .gridd>div{
+            /* width: 100%;
+            height: 500px; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 30px;
+        }
+       .gridd>div>h2{
+        color: rgb(77, 77, 178);
+       }
+       .gridd>div>h2:hover{
+        color: #68dab4;
+       }
+       .gridd>div>img{
+        width: 100%;
+        height: auto;
+       }
+       .centre > button{
+        color: rgb(207, 75, 75);
+        border-radius: 70px;
+        text-align: center;
+        width: 400px;
+        height: 90px;
+        border: 2px solid rgb(207, 75, 75);
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: inline-block;
+        font-size: 50px;
+       }
+       .centre > button:hover{
+        background-color: rgb(207, 75, 75);
+        color: white;
+       }
+       .footer{
+        background-color: #423F8D;
+        margin-top: 30px;
+        height: 600px;
+        border-radius: 40px;
+        color: white;
+        
+        
+        
+        
+       }
+       #foot > div{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+       }
+       .footer > div{
+        margin-top: 30px;
+        margin-left: 30px;
+        
+        
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+           <img src="https://img.icons8.com/?size=100&id=3723&format=png" alt="location"> 
+            <div><p>57/A, Green Lane, NYC    <img src="https://img.icons8.com/?size=100&id=9660&format=png" alt="">+10 (78) 367 3692</p>
+            </div>
+            <img src="https://img.icons8.com/?size=100&id=118467&format=png" alt="facebook">
+            <img src="https://img.icons8.com/?size=100&id=437&format=png" alt="Twitter">
+            <img src="https://img.icons8.com/?size=100&id=447&format=png" alt="linkdin">
+            <img src="https://img.icons8.com/?size=100&id=32292&format=png" alt="instagram">
+        </div>
+    </header>
+    <div id="heading">
+        <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo.png" alt="kindergarten">
+        <p>Home</p>
+        <p>class</p>
+        <p>About</p>
+        <p>blog</p>
+        <p>Contact</p>
+        <button>Enrole</button>
+    </div>
+    <div>
+        <div>
+            <img id="bodyimg" src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div >
+
+        </div>
+    </div>
+    <h2 id="h2text">Welcome to our <span id="h3text">Kindergarten</span></h2>
+    <p id="ptext"> Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue fowl male signs.</p>
+    <div id="balls" style="display: flex; flex-wrap: wrap; align-items: center;">
+        <div>
+            <div>
+                <div>
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon1.svg" alt="bal">
+                </div>
+                <div>
+                    <h3 style="color: rgb(95, 29, 218); font-size: 40px;">Inter School Sports</h3>
+                    <p>The words you use in your written communica speak volumes.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon3.svg" alt="bal">
+                </div>
+                <div>
+                    <h3 style="color: aqua; font-size: 40px;">Multimedia Class</h3>
+                    <p>The words you use in your written communica speak volumes.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon2.svg" alt="bal">
+                </div>
+                <div>
+                    <h3 style="color: yellow; font-size: 40px; ">Friendly Environment</h3>
+                    <p>The words you use in your written communica speak volumes.</p>
+                </div>
+            </div>
+        </div>
+        <div id="sideimg">
+            <img style="width: 700px; height: auto; align-self: flex-end; " src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/about2.png" alt="">
+        </div>
+        
+    </div>
+
+
+    <div class="section-tittle">
+        <h2 >Classes We Offer</h2>
+        <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
+        <div class="gridd">
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img1.png" alt="1st">
+                <h2 >Intaligent changefe</h2>
+                <p>This words is use to speak and communivate the words</p>
+                <p>Age Group<span style="color: orange;">3.5</span>   Classes <span style="color: yellow;">30</span> class price <span style="color: skyblue;">10/h</span></p>
+            </div>
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img2.png" alt="1st">
+                <h2 >Intaligent changefe</h2>
+                <p>This words is use to speak and communivate the words</p>
+                <p>Age Group<span style="color: orange;">3.5</span>   Classes <span style="color: yellow;">30</span> class price <span style="color: skyblue;">10/h</span></p>
+            </div>
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img3.png" alt="1st">
+                <h2 >Intaligent changefe</h2>
+                <p>This words is use to speak and communivate the words</p>
+                <p>Age Group<span style="color: orange;">3.5</span>   Classes <span style="color: yellow;">30</span> class price <span style="color: skyblue;">10/h</span></p>
+            </div>
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img2.png" alt="1st">
+                <h2 >Intaligent changefe</h2>
+                <p>This words is use to speak and communivate the words</p>
+                <p>Age Group<span style="color: orange;">3.5</span>   Classes <span style="color: yellow;">30</span> class price <span style="color: skyblue;">10/h</span></p>
+            </div>
+            
+        </div>
+    </div >
+    <div class="centre"><button >More classes</button></div>
+
+
+    <div class="section-tittle">
+        <h2 >Classes We Offer</h2>
+        <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
+        <div class="gridd" style="margin-bottom: 20px;">
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team3.png" alt="1st">
+                <h3 style="text-align: center;">Hyman</h3>
+                <p>instructor</p>
+                
+            </div>
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team1.png" alt="1st">
+                <h3 style="text-align: center;">boad robert</h3>
+                <p>Lead</p>
+                
+            </div>
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team2.png" alt="1st">
+                <h3 style="text-align: center;">alice</h3>
+                <p>maneger</p>
+                
+            </div>
+            <div>
+                <img  src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team1.png" alt="1st">
+                <h3 style="text-align: center;">corterge</h3>
+                <p>sport instructor</p>
+                
+            </div>
+            
+        </div>
+    </div >
+
+    
+    <footer class="footer">
+        <div id="foot"> 
+            <div><img src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo2_footer.png" alt="">
+                <p>Users and submit their own items. You can create different packages and by connecting with your PayPalor Stripe account charge users for registration.</p>
+                <div>
+                <img src="https://img.icons8.com/?size=100&id=118467&format=png" alt="facebook">
+                <img src="https://img.icons8.com/?size=100&id=437&format=png" alt="Twitter">
+                <img src="https://img.icons8.com/?size=100&id=447&format=png" alt="linkdin">
+                <img src="https://img.icons8.com/?size=100&id=32292&format=png" alt="instagram">
+            </div>
+            <div>
+                <h3>Quick links</h3>
+        <p>classes</p>
+        <p>join with us</p>
+        <p>about</p>
+        <p>Blog</p>
+        <p>Events</p>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+</body>
+</html>

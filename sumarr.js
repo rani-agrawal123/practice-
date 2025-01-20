@@ -28,12 +28,13 @@
 // max([3, 1, 4, 1, 5, 9]);
 
 
-// 3. Reverse an Array
-// Problem: Write a function that reverses the elements of an array in place.
-// Example Input: [1, 2, 3, 4]
+// 3.  Count Even and Odd Numbers in an Array
+// Problem: Write a program to count how many even and odd numbers are in a given array.
+// Example Input: [1, 2, 3, 4, 5]
+// Output: Even: 2, Odd: 3
 
 // function EvenOdd(arr){
-//     let even = 0; 
+//     let even = 0;
 //     let odd = 0;
 //      for(i=0; i<arr.length; i++){
 //         if(arr[i]%2==0){
@@ -88,12 +89,12 @@
 // Example Input: [1, 2, 3, 4, 5]
 
 // function short(arr){
-//     for(i=0; i<arr.length; i++){
-//             if(arr[i]>arr[i+1]){
+//    for(i=0; i<arr.length; i++){
+//        if(arr[i]>arr[i+1]){
 //                console.log("False");
 //                return;
-//             }   
-//         }     
+//        }
+//    }
 //         console.log("True");
 // }
 // short([1,2,3,4,5]);
@@ -105,7 +106,6 @@
 
 // function duplicat(arr){
 //     let temp = [];
-//     let num = arr[0];
 //     for(i=0; i<arr.length; i++){
 //         if(arr[i]!==arr[i+1])
 //         temp.push(arr[i]);
@@ -132,20 +132,22 @@
 
 
 
-// 9. Rotate an Array ******************************
+// 9. Rotate an Array
 // Problem: Write a function to rotate an array by k positions to the right.
 // Example Input: Array: [1, 2, 3, 4, 5], k = 2
 // Output: [4, 5, 1, 2, 3]
 
 // function rotate(arr,k){
-//     let temp = "";
-//     for(i=0; i<arr.length; i++){
-//         temp += arr[i];
+//     let temp = [];
+//     for(i=arr.length-k; i<arr.length; i++){
+//         temp.push(arr[i]);
+//     }
+//     for(i=0; i<arr.length-k; i++){
+//       temp.push(arr[i])
 //     }
 //     console.log(temp);
 // }
-// rotate([4, 5, 1, 2, 3],2)
-
+// rotate([1, 2, 3, 4, 5],2)
 
 
 
@@ -176,29 +178,27 @@
 
 
 
-// 11. Find the Frequency of Each Element ***********************
+// 11. Find the Frequency of Each Element
 // Problem: Write a program that finds the frequency of each element in an array.
 // Example Input: [1, 2, 2, 3, 3, 3]
 // Output: {1: 1, 2: 2, 3: 3}
 
-// function frequency(arr){
-//     let temp1 = "";
-//     let temp2 = arr[0];
-//     let sum = 0;
-//     for(i=0; i<arr.length; i++){
-//         if(temp2 === arr[i]){
-        
-//         }
-//         else{
-//             sum += 1;
-//         }
-//         console.log(sum);
-//     }
+// function frequency(arr) {
+//   let obj = {}
+//   for (i = 0; i < arr.length; i++) {
+//     if (obj[ arr[ i ] ] == undefined) {
+//             obj[ arr[ i ] ] = 1;
+//           }
+//           else {
+//             obj[ arr[ i ] ] += 1;
+//           }
+//   }
+//   console.log(obj)
 // }
-// frequency([1, 2, 2, 3, 3, 3])
+// frequency([ 1, 2, 2, 3, 3, 3 ])
 
 
-// 12. Find All Pairs with a Given Sum ****************************************
+// 12. Find All Pairs with a Given Sum
 // Problem: Write a program to find all pairs of numbers in an array whose sum equals a given target.
 // Example Input: Array: [1, 2, 3, 4], Target: 5
 // Output: [[1, 4], [2, 3]]
@@ -208,8 +208,7 @@
 //     for(i=0; i<arr.length; i++){
 //         for(j=i+1; j<arr.length; j++){
 //             if((arr[i]+arr[j])==target){
-//               temp.push(arr[i]);
-//               temp.push(arr[j]);
+//               temp.push([arr[i],arr[j]]);
 //             }
 //         }
 //     }
@@ -246,7 +245,7 @@
 
 
 
-// 14. Shift All Zeros to the End *********************************************************
+// 14. Shift All Zeros to the End
 // Problem: Write a program that shifts all zeros in an array to the end while maintaining the order of other elements.
 // Example Input: [0, 1, 0, 3, 12]
 // Output: [1, 3, 12, 0, 0]
@@ -257,12 +256,12 @@
 //     for(i=0; i<arr.length; i++){
 //         if(arr[i]!=0){
 //             temp1.push(arr[i]);
-//         }      
+//         }
 //     }
 //     for(i=0; i<arr.length; i++){
 //         if(arr[i]==0){
 //             temp2.push(arr[i]);
-//         }      
+//         }
 //     }
 //     console.log(temp1.concat(temp2));
 // }
@@ -276,3 +275,13 @@
 // Example Input: [1, 2, 4, 5]
 // Output: 3
 
+
+function missing(arr){
+  for(i=0; i<arr.length; i++){
+   if(i+1 != arr[i]){
+     console.log(i+1);
+     return;
+   }
+  }
+}
+missing([1, 2,3, 4, 5, 7]);
