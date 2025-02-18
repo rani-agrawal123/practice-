@@ -452,25 +452,80 @@
 
 
 
-function findsum(a){
-    let sum = 0;
-    for(k=0; k<a.length; k++){
-      sum += a[k];
-    }
-    return sum;
-  }
-  function max(arr){
-    let result = 0;
-    for(i=0; i<arr.length; i++){
-      let temp = [];
-      for(j=i; j<arr.length; j++){
-        temp.push(arr[j])
-        let sum = findsum(temp);
-        if(sum>result){
-          result = sum
-        }
+// function findsum(a){
+//     let sum = 0;
+//     for(k=0; k<a.length; k++){
+//       sum += a[k];
+//     }
+//     return sum;
+//   }
+//   function max(arr){
+//     let result = 0;
+//     for(i=0; i<arr.length; i++){
+//       let temp = [];
+//       for(j=i; j<arr.length; j++){
+//         temp.push(arr[j])
+//         let sum = findsum(temp);
+//         if(sum>result){
+//           result = sum
+//         }
+//       }
+//     }
+//     return result
+//   } 
+//   console.log(max([5,4,-1,7,8]))
+
+
+
+
+
+
+
+
+
+// let arr = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ]
+// let m = 3;
+// let n = 3;
+// for(i=0; i<m; i++){
+//     let count = 0;
+//     for(j=0; j<n; j++){
+//         if((arr[j][i])%2==1){
+//             count += arr[j][i]
+//         }
+//     }
+//     console.log(count)
+// }
+
+
+
+
+function findPivotElements(arr) {
+  let n = arr.length;
+  let result = [];
+  for (let i = 1; i < n - 1; i++) {
+      let isPivot = true;
+      for (let j = 0; j < i; j++) {
+          if (arr[j] >= arr[i]) {
+              isPivot = false;
+              break;
+          }
       }
-    }
-    return result
-  } 
-  console.log(max([5,4,-1,7,8]))
+      for (let j = i + 1; j < n; j++) {
+          if (arr[j] <= arr[i]) {
+              isPivot = false;
+              break;
+          }
+      }
+      if (isPivot) {
+          result.push(arr[i]);
+      }
+  }
+
+  return result;
+}
+let arr = [1, 3, 4, 2, 6, 9, 8, 10];
+console.log(findPivotElements(arr)); 

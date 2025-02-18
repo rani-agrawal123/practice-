@@ -45,11 +45,11 @@
 // };
 
 // for(let key in student){
-//     // console.log(typeof student[key])
-//     // if(typeof student[key] == "string"){
-//     //       console.log(key)
-//     // }
-
+//     console.log(typeof student[key])
+//     if(typeof student[key] == "string"){
+//           console.log(key)
+//     }
+// }
 //     if(typeof student[key] == "boolean"){
 //         console.log(student[key])
 //     }
@@ -192,17 +192,17 @@
 
 
 
-function add(a){
-    return function(b){
-        return function(c){
-            return a+b+c;
-        }
-    }
-}
-// let out = add(1);
-// let res = out(2);
-// console.log(res(3))
+// function add(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c;
+//         }
+//     }
+// }
+// // let out = add(1);
+// // let res = out(2);
+// // console.log(res(3))
 
 
-let out = add(2)(3)(1);
-console.log(out)
+// let out = add(2)(3)(1);
+// console.log(out)
